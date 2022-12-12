@@ -10,14 +10,8 @@ const Header = () => {
   useEffect(() => setMounted(true), []);
 
   return (
-    <section className="max-w-8xl mt-5  flex justify-end">
-      <motion.div
-        className="w-max-8xl xl:fixed flex"
-        variants={slideIn("right", 0.2)}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true }}
-      >
+    <section className="max-w-4npxl mt-5 flex justify-end">
+      <div className="xl:fixed flex">
         <Link
           href="https://twitter.com/_canguden"
           target="_blank"
@@ -28,7 +22,7 @@ const Header = () => {
           </button>
         </Link>
         {mounted && <ThemeChanger />}
-      </motion.div>
+      </div>
     </section>
   );
 };
