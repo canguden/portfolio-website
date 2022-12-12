@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  body {
+
+    @apply mx-auto px-6;
+  }
+}
+
+* {
+  font-family: 'Inter', Open sans, sans-serif;
+  font-weight: lighter;
+  scroll-behavior: smooth;
+}
+
+:root {
+  /* Your default theme */
+  --background: white;
+  --foreground: black;
+}
+
+[data-theme='dark'] {
+  @apply bg-zinc-900
+}
