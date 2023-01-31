@@ -4,7 +4,7 @@ import { fadeIn } from "../utils/motion";
 import { FaTwitter } from "react-icons/fa";
 import { BsArrowRight } from "react-icons/bs";
 
-const Button = () => {
+const Bttn = () => {
   return (
     <div className=" flex flex-row max-w-3xl justify-between  mx-auto font-semibold">
       <motion.div
@@ -13,7 +13,7 @@ const Button = () => {
         whileInView="show"
         viewport={{ once: true }}
       >
-        <Link href="/pareto-principle" passHref={true}>
+        <Link href="/john-wooden-pyramid" passHref={true}>
           <button className="font-bold text-md lg:text-lg text-black dark:text-white flex mr-3 rounded-lg py-2  ">
             Read more
             <BsArrowRight 
@@ -40,4 +40,4 @@ const Button = () => {
   );
 };
 
-export default Button;
+export default Bttn;

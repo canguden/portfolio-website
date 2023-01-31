@@ -2,12 +2,14 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
 import Button from "./Button";
+import Btn from "./Btn";
+import Bttn from "./Bttn";
 
 const Blog = () => {
   return (
     <>
       {/* Blog Post 1 */}
-      <div className="mt-[5rem] max-w-4xl mx-auto font-semibold">
+      <div className="mt-[5rem] max-w-3xl mx-auto font-semibold">
         <motion.p
           variants={fadeIn("up", "tween", 0.2, 1)}
           initial="hidden"
@@ -21,7 +23,7 @@ const Blog = () => {
         </motion.p>
       </div>
 
-      <div className="mt-[1rem] max-w-4xl mx-auto font-semibold">
+      <div className="mt-[1rem] max-w-3xl mx-auto font-semibold">
         <motion.p
           variants={fadeIn("up", "tween", 0.2, 1)}
           initial="hidden"
@@ -51,7 +53,7 @@ const Blog = () => {
 
       {/* post number 2 */}
 
-      <div className="mt-[3rem] max-w-4xl mx-auto font-semibold">
+      <div className="mt-[3rem] max-w-3xl mx-auto font-semibold">
         <motion.p
           variants={fadeIn("up", "tween", 0.2, 1)}
           initial="hidden"
@@ -65,7 +67,7 @@ const Blog = () => {
         </motion.p>
       </div>
 
-      <div className="mt-[1rem] max-w-4xl mx-auto font-semibold">
+      <div className="mt-[1rem] max-w-3xl mx-auto font-semibold">
         <motion.p
           variants={fadeIn("up", "tween", 0.2, 1)}
           initial="hidden"
@@ -89,10 +91,10 @@ const Blog = () => {
           <br />
         </motion.p>
       </div>
-      <Button />
+      <Bttn />
 
       {/* Post number 3 */}
-      <div className="mt-[3rem] max-w-4xl mx-auto font-semibold">
+      <div className="mt-[3rem] max-w-3xl mx-auto font-semibold">
         <motion.p
           variants={fadeIn("up", "tween", 0.2, 1)}
           initial="hidden"
@@ -106,7 +108,7 @@ const Blog = () => {
         </motion.p>
       </div>
 
-      <div className="mt-[1rem] max-w-4xl mx-auto font-semibold">
+      <div className="mt-[1rem] max-w-3xl mx-auto font-semibold">
         <motion.p
           variants={fadeIn("up", "tween", 0.2, 1)}
           initial="hidden"
@@ -124,14 +126,14 @@ const Blog = () => {
           className="mb-1 font-light text-lg lg:text-xl"
         >
           Kobe Bryant was one of the best basketball players of all time and he
-          was known for his unbelieable work ethic. He didnt have any friends,
+          was known for his unbelievable work ethic. He didnt have any friends,
           he basically was working out 24/7.
           <br />
           <br />
         </motion.p>
       </div>
 
-      <Button />
+      <Btn />
     </>
   );
 };

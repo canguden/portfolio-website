@@ -9,7 +9,7 @@ const Wooden = () => {
   return (
     <>
       {/* Blog Post 1 */}
-      <div className="mt-[3rem] max-w-4xl mx-auto font-semibold">
+      <div className="mt-[3rem] max-w-3xl mx-auto font-semibold">
         <motion.p
           variants={fadeIn("up", "tween", 0.2, 1)}
           initial="hidden"
@@ -21,7 +21,7 @@ const Wooden = () => {
         </motion.p>
       </div>
 
-      <div className="mt-[1rem] max-w-4xl mx-auto font-semibold">
+      <div className="mt-[1rem] max-w-3xl mx-auto font-semibold">
         <motion.p
           variants={fadeIn("up", "tween", 0.2, 1)}
           initial="hidden"
@@ -62,7 +62,7 @@ const Wooden = () => {
         </motion.p>
       </div>
 
-      <div className=" flex flex-row max-w-4xl  mx-auto font-semibold">
+      <div className=" flex flex-row max-w-3xl  mx-auto font-semibold">
         {/* Tweet button */}
         <motion.div
           variants={fadeIn("up", "tween", 0.2, 1)}

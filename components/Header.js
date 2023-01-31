@@ -2,8 +2,6 @@ import Link from "next/link";
 import ThemeChanger from "./Themechanger";
 import { useState, useEffect } from "react";
 import { FaTwitter } from "react-icons/fa";
-import { motion } from "framer-motion";
-import { slideIn } from "../utils/motion";
 
 const Header = () => {
   const [mounted, setMounted] = useState(false);
