@@ -9,19 +9,19 @@ const Pareto = () => {
   return (
     <>
       {/* Blog Post 1 */}
-      <div className="mt-[3rem] max-w-3xl mx-auto font-semibold">
+      <div className="mt-[3rem] max-w-xl mx-auto font-semibold">
         <motion.p
           variants={fadeIn("up", "tween", 0.2, 1)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="mb-1 font-light text-3xl lg:text-4xl text-emerald-600 dark:text-emerald-300 "
+          className="mb-1 font-light text-2xl"
         >
           The Pareto Principle (80/20rule)
         </motion.p>
       </div>
 
-      <div className="mt-[1rem] max-w-3xl mx-auto font-semibold">
+      <div className="mt-[1rem] max-w-xl mx-auto font-semibold">
         <motion.p
           variants={fadeIn("up", "tween", 0.2, 1)}
           initial="hidden"
@@ -36,7 +36,7 @@ const Pareto = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="mb-1 font-light text-lg lg:text-xl"
+          className="mb-1 font-bold text-md"
         >
           The Pareto Principle, also known as the 80-20 rule, is a concept that
           is applied to many people their life and time management. It is the
@@ -45,10 +45,7 @@ const Pareto = () => {
           in life are not distributed evenly.
           <br />
           <br />
-          <Image 
-          src={projectImage}
-          alt="Pareto Principle"
-          />
+          <Image src={projectImage} alt="Pareto Principle" />
           <br />
           The key to the Pareto Principle is to identify that around 20% of
           one’s actions on the most productive tasks lead to the most success.
@@ -66,22 +63,6 @@ const Pareto = () => {
           <br />
           <br />
         </motion.p>
-      </div>
-
-      <div className=" flex flex-row max-w-3xl  mx-auto font-semibold">
-        {/* Tweet button */}
-        <motion.div
-          variants={fadeIn("up", "tween", 0.2, 1)}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-        >
-          <Link href="https://ctt.ac/UM87p" target="_blank" passHref={true}>
-            <button className=" text-md lg:text-xl text-white flex mr-5  bg-sky-500 rounded-full py-2  px-4">
-              Tweet <FaTwitter className="mt-1 ml-1 pl-1" />
-            </button>
-          </Link>
-        </motion.div>
       </div>
     </>
   );

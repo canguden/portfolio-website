@@ -2,16 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   body {
-
     @apply mx-auto px-6;
   }
 }
 
 * {
-  font-family: 'Inter', Open sans, sans-serif;
+  font-family: "SegoeUI", Open sans, sans-serif;
   font-weight: lighter;
   scroll-behavior: smooth;
 }
@@ -22,6 +20,6 @@
   --foreground: black;
 }
 
-[data-theme='dark'] {
-  @apply bg-zinc-900
+[data-theme="dark"] {
+  @apply bg-zinc-900;
 }

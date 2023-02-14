@@ -1,14 +1,14 @@
 import Head from "next/head";
-import Blog from "../components/Blog";
+import Hero from "../components/Hero";
 
 const Home = () => {
   return (
     <>
       <Head>
         <title>Can Guden</title>
-        <meta name='description' content='Can Guden Blog' />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Blog />
+      <Hero />
     </>
   );
 };

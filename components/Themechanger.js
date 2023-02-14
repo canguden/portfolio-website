@@ -1,5 +1,5 @@
 import { useTheme } from "next-themes";
-import { FaSun, FaMoon } from "react-icons/fa";
+import { CiBrightnessUp } from "react-icons/ci";
 
 const ThemeChanger = () => {
   const { resolvedTheme, setTheme } = useTheme();
@@ -8,13 +8,13 @@ const ThemeChanger = () => {
     <button
       aria-label="Toggle Dark Mode"
       type="button"
-      className=" transition-colors text-md lg:text-xl  text-white  flex bg-gray-200 dark:bg-gray-700 rounded-lg py-2 px-4"
+      className=" transition-colors text-md lg:text-xl text-white flex ease-in-out"
       onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
     >
       {resolvedTheme === "dark" ? (
-        <FaSun className="text-gray-300 mt-1" />
+        <CiBrightnessUp className="h-6 w-6 text-gray-300 mt-1" />
       ) : (
-        <FaMoon className="text-black mt-1" />
+        <CiBrightnessUp className="h-6 w-6 text-black mt-1" />
       )}
     </button>
   );

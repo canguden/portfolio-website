@@ -3,31 +3,30 @@ import Image from "next/image";
 import projectImage from "../public/wooden.jpg";
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
-import { FaTwitter } from "react-icons/fa";
 
 const Wooden = () => {
   return (
     <>
       {/* Blog Post 1 */}
-      <div className="mt-[3rem] max-w-3xl mx-auto font-semibold">
+      <div className="mt-[3rem] max-w-xl mx-auto font-semibold">
         <motion.p
           variants={fadeIn("up", "tween", 0.2, 1)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="mb-1 font-light text-3xl lg:text-4xl text-emerald-600 dark:text-emerald-300 "
+          className="mb-1 font-bold text-xl"
         >
           Pyramid of Success by John Wooden
         </motion.p>
       </div>
 
-      <div className="mt-[1rem] max-w-3xl mx-auto font-semibold">
+      <div className="mt-[1rem] max-w-xl mx-auto font-semibold">
         <motion.p
           variants={fadeIn("up", "tween", 0.2, 1)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className=" mb-1 text-sm lg:text-sm font-light"
+          className=" mb-1 font-bold text-md"
         >
           10/12/2022
         </motion.p>
@@ -36,7 +35,7 @@ const Wooden = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="mb-1 font-light text-lg lg:text-xl"
+          className="mb-1 font-light text-lg text-gray-800 dark:text-gray-300"
         >
           He brought an entire community together, inspired them with
           championships, and taught them how to master the fundamental skills
@@ -54,28 +53,9 @@ const Wooden = () => {
           roadmap to being a better person.
           <br />
           <br />
-          <Image 
-          src={projectImage}
-          alt="Pyramid of Success"
-          />
+          <Image src={projectImage} alt="Pyramid of Success" />
           <br />
         </motion.p>
-      </div>
-
-      <div className=" flex flex-row max-w-3xl  mx-auto font-semibold">
-        {/* Tweet button */}
-        <motion.div
-          variants={fadeIn("up", "tween", 0.2, 1)}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-        >
-          <Link href="https://ctt.ac/UM87p" target="_blank" passHref={true}>
-            <button className=" text-md lg:text-xl text-white flex mr-5  bg-sky-500 rounded-full py-2  px-4">
-              Tweet <FaTwitter className="mt-1 ml-1 pl-1" />
-            </button>
-          </Link>
-        </motion.div>
       </div>
     </>
   );

@@ -1,18 +1,16 @@
-import '../styles/globals.css';
-import { ThemeProvider } from 'next-themes';
-import Header from '../components/Header';
-import Hero from '../components/Hero';
-import Footer from '../components/Footer';
+import "../styles/globals.css";
+import { ThemeProvider } from "next-themes";
+import NavBar from "../components/NavBar";
+import { Analytics } from '@vercel/analytics/react';
 
 function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider enableSystem={true} attribute="class">
-      <Header />
-      <Hero />
+      <NavBar />
       <Component {...pageProps} />
-      <Footer />
+      <Analytics />
     </ThemeProvider>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;
