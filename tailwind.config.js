@@ -7,6 +7,9 @@ module.exports = {
   darkMode: "class", 
   theme: {
     extend: {},
+    fontFamily:{
+      TiltWarp: ["Tilt Warp", "cursive"]
+    }
   },
   plugins: [],
 }

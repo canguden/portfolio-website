@@ -6,44 +6,37 @@ const NavBar = () => {
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
   return (
-    <div className="mt-28  max-w-xl mx-auto font-semibold">
-      <Link legacyBehavior href="/">
-        <h1 className="mr-8 text-3xl md:text-3xl decoration-none text-gray-800 dark:text-white cursor-pointer">
-          Can Güden
-        </h1>
-      </Link>
+      <section className=" justify-start items-start text-left mb-10 2xl:fixed 2xl:ml-10 flex w-full  left-0 top-8 ">
+        <div className="  2xl:absolute  items-center justify-center text-center">
 
-      <section className=" mb-10  flex w-full -800 py-2 ">
-        <div className="mx-auto max-w-4xl flex-1 items-center justify-center text-center">
-          <ul className="mx-auto flex flex-row items-center py-1  font-semibold">
-            <li className="mr-4 text-lg cursor-pointer text-gray-700 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">
+          <ul className=" flex flex-row 2xl:flex 2xl:flex-col  py-1  font-semibold">
+            <li className="mr-4 justify-evenly mt-2 text-left items-start text-xl cursor-pointer text-gray-300 hover:text-white">
               <Link legacyBehavior href="/">
                 <a>home</a>
               </Link>
             </li>
 
-            <li className="mr-4 text-lg cursor-pointer text-gray-700 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">
+            <li className="mr-4 mt-2 text-xl cursor-pointer text-gray-300 hover:text-white">
               <Link legacyBehavior href="./about">
                 <a>about</a>
               </Link>
             </li>
-            <li className="text-lg cursor-pointer text-gray-700 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">
+            <li className="text-xl mt-2 cursor-pointer text-gray-300 hover:text-white">
               <Link legacyBehavior href="./projects">
-                <a>projects</a>
+                <a>work</a>
               </Link>
             </li>
-            <li className="ml-4 text-lg cursor-pointer text-gray-700 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">
+            {/* <li className=" text-xl mt-2 ml-4 2xl:ml-0 cursor-pointer text-gray-300 hover:text-white">
               <Link legacyBehavior href="./blog">
-                <a>blog</a>
+                <a>likes</a>
               </Link>
-            </li>
-            <div className="center mb-2 align-center m-auto flex flex-1 justify-end px-4">
+            </li> */}
+            {/* <div className="center mb-2 align-center m-auto flex flex-1 justify-end px-4">
               {mounted && <ThemeChanger />}
-            </div>
+            </div> */}
           </ul>
         </div>
       </section>
-    </div>
   );
 };
 

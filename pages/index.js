@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Can Guden</title>
+        <title>Can Guden | Web Developer, Designer, Entrepreneur</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero />
