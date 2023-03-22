@@ -1,42 +1,53 @@
 import Link from "next/link";
 import ThemeChanger from "./Themechanger";
 import { useState, useEffect } from "react";
+import { motion, useCycle } from "framer-motion";
+import { useRouter } from "next/router";
+import MenuToggle from "./MenuToggle";
+import NavLinks from "./NavLinks";
 
-const NavBar = () => {
-  const [mounted, setMounted] = useState(false);
-  useEffect(() => setMounted(true), []);
-  return (
-    <section className=" justify-start items-start text-left mb-10  flex  max-w-7xl mx-auto ">
-      <div className="   items-center justify-center text-center">
-        <ul className=" flex flex-row py-1 font-semibold">
-          <li className="mr-4 justify-evenly mt-2 text-left items-start text-xl cursor-pointer text-gray-300 hover:text-white">
-            <Link legacyBehavior href="/">
-              <a>home</a>
-            </Link>
-          </li>
-
-          <li className="mr-4 mt-2 text-xl cursor-pointer text-gray-300 hover:text-white">
-            <Link legacyBehavior href="./about">
-              <a>about</a>
-            </Link>
-          </li>
-          <li className="text-xl mt-2 cursor-pointer text-gray-300 hover:text-white">
-            <Link legacyBehavior href="./projects">
-              <a>work</a>
-            </Link>
-          </li>
-          {/* <li className=" text-xl mt-2 ml-4 2xl:ml-0 cursor-pointer text-gray-300 hover:text-white">
-              <Link legacyBehavior href="./blog">
-                <a>likes</a>
-              </Link>
-            </li> */}
-          {/* <div className="center mb-2 align-center m-auto flex flex-1 justify-end px-4">
-              {mounted && <ThemeChanger />}
-            </div> */}
-        </ul>
-      </div>
-    </section>
-  );
+const menuVariants = {
+  open: {
+    transition: {
+      duration: 0.4,
+    },
+  },
+  closed: {
+    transition: {
+      duration: 0.4,
+      delay: 0.4,
+    },
+  },
 };
 
-export default NavBar;
+export default function Home() {
+  const [isOpen, toggleOpen] = useCycle(false, true);
+
+  const toggle = () => {
+    setAnimation("moving");
+    setTimeout(() => {
+      setAnimation(animation === "closed" ? "open" : "closed");
+    }, 200);
+  };
+
+  return (
+    <>
+      <div className="flex flex-1 justify-between lg:mx-20">
+        <motion.nav
+          className="flex flex-row"
+          initial={false}
+          animate={isOpen ? "open" : "closed"}
+        >
+          <motion.div variants={menuVariants} />
+          <MenuToggle toggle={() => toggleOpen()} />
+          <NavLinks />
+        </motion.nav>
+        <Link legacyBehavior href="/">
+          <p className="flex cursor-pointer text-xl justify-end items-center hover:text-indigo-500">
+            CG
+          </p>
+        </Link>
+      </div>
+    </>
+  );
+}

@@ -1,23 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   body {
-    @apply mx-auto px-6 bg-black;
+    @apply mx-auto px-6  bg-zinc-900 text-gray-200;
   }
 }
 
 * {
-  font-family: "Tilt Warp", Open sans, sans-serif;
+  font-family: "QuickSand", Open sans, sans-serif;
   font-weight: lighter;
   scroll-behavior: smooth;
 }
 
-:root {
-  /* Your default theme */
-  --background: white;
-  --foreground: black;
+[data-theme="dark"] {
+  @apply bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500;
 }
 
+@keyframes word {
+  0% {
+    transform: translateY(100%);
+  }
+  15% {
+    transform: translateY(-10%);
+    animation-timing-function: ease-out;
+  }
+
+  20% {
+    transform: translateY(0);
+  }
+
+  40%,
+  100% {
+    transform: translateY(-110%);
+  }
+}
+
+.animate-word {
+  animation: word 7s infinite;
+}
+.animate-word-delay-1 {
+  animation: word 7s infinite;
+  animation-delay: -1.4s;
+}
+.animate-word-delay-2 {
+  animation: word 7s infinite;
+  animation-delay: -2.8s;
+}
+.animate-word-delay-3 {
+  animation: word 7s infinite;
+  animation-delay: -4.2s;
+}
+.animate-word-delay-4 {
+  animation: word 7s infinite;
+  animation-delay: -5.6s;
+}
