@@ -19,9 +19,9 @@ const Hero = () => {
           width={250}
         />
       </div>
-      <div className="max-w-7xl mx-auto flex  lg:mt-10 font-semibold mx-30">
+      <div className="max-w-3xl mx-auto flex  lg:mt-10 font-semibold mx-30">
         <div>
-          <p className="flex  mx-auto text-2xl lg:text-5xl leading-normal lg:leading-normal font-light">
+          <p className="flex  mx-auto text-2xl lg:text-xl leading-normal lg:leading-normal font-light">
             <span className="">
               {" "}
               Hi my name is Can, and I am a{" "}
@@ -34,16 +34,16 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl flex flex-col mx-auto mt-10 font-semibold">
-        <p className=" mx-auto text-2xl lg:text-5xl leading-normal lg:leading-normal font-light">
-          I specialise in deisigning, developing and creating beautiful and
+      <div className="max-w-3xl flex flex-col mx-auto mt-10 font-semibold">
+        <p className=" mx-auto text-2xl lg:text-xl leading-normal lg:leading-normal font-light">
+          I specialise in designing, developing and creating beautiful and
           functional interfaces using React, Next.js, Vue.js and other hip
           frameworks.
         </p>
       </div>
 
-      <div className="mt-10 max-w-7xl mx-auto">
-        <p className="max-w-7xl text-2xl lg:text-5xl leading-normal lg:leading-normal font-light">
+      <div className="mt-10 max-w-3xl mx-auto">
+        <p className="max-w-7xl text-2xl lg:text-xl leading-normal lg:leading-normal font-light xl:h-[250px]">
           My goal is to create websites that are both visually appealing and
           easy to use. I am always looking for new challenges and opportunities.
         </p>

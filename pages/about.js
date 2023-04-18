@@ -11,18 +11,18 @@ const About = () => {
         <meta name="description" content="About" />
       </Head>
 
-      <motion.div exit={{ opacity: 0 }} className="mt-10 max-w-7xl mx-auto">
-        <p className="max-w-7xl text-2xl lg:text-5xl leading-normal lg:leading-normal font-light text-gray-200">
+      <motion.div exit={{ opacity: 0 }} className="mt-10 max-w-3xl mx-auto">
+        <p className="max-w-7xl text-2xl lg:text-xl leading-normal lg:leading-normal font-light text-gray-200">
           Love for Basketball, Art, Chess, Games, Snowboarding, Music, Reading
           and Travel.
         </p>
 
-        <p className="max-w-7xl mt-10 text-2xl lg:text-5xl leading-normal lg:leading-normal font-light text-gray-200">
+        <p className="max-w-3xl mt-10 text-2xl lg:text-xl leading-normal lg:leading-normal font-light text-gray-200">
           Photoroll Backshots, Greece, Italy, Montenegro & Spain
         </p>
       </motion.div>
 
-      <div className="max-w-7xl  flex flex-col col-span-2 mx-auto mt-10 font-semibold">
+      <div className="max-w-3xl  flex flex-col col-span-2 mx-auto mt-10 font-semibold">
         <div className="max-w-7xl">
           <Image
             src="/etna.jpg"

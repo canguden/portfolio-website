@@ -28,13 +28,13 @@ const NavLinks = () => {
   return (
     <>
       <motion.li
-        className="list-none text-md md:text-xl cursor-pointer px-3 py-5 "
+        className="list-none text-sm md:text-xl cursor-pointer  px-3 py-5 "
         variants={menuLinkVariants}
       >
         <Link
           href="/"
           className={`${
-            router.pathname === "/" ? "text-blue-500" : "text-white mx-2"
+            router.pathname === "/" ? "text-blue-500" : "text-white m"
           } `}
         >
           <span className="mx-2">Home</span>
@@ -42,7 +42,7 @@ const NavLinks = () => {
         <Link
           href="/about"
           className={`${
-            router.pathname === "/about" ? "text-blue-500" : "text-white mx-2"
+            router.pathname === "/about" ? "text-blue-500" : "text-white "
           } `}
         >
           <span className="mx-2">About</span>
@@ -50,7 +50,7 @@ const NavLinks = () => {
         <Link
           href="/work"
           className={`${
-            router.pathname === "/work" ? "text-blue-500" : "text-white mx-2"
+            router.pathname === "/work" ? "text-blue-500" : "text-white "
           } `}
         >
           <span className="mx-2">Work</span>
@@ -58,7 +58,7 @@ const NavLinks = () => {
         <Link
           href="/contact"
           className={`${
-            router.pathname === "/contact" ? "text-blue-500" : "text-white mx-2"
+            router.pathname === "/contact" ? "text-blue-500" : "text-white "
           } `}
         >
           <span className="mx-2">Contact</span>
