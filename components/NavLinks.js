@@ -28,13 +28,13 @@ const NavLinks = () => {
   return (
     <>
       <motion.li
-        className="list-none text-sm md:text-xl cursor-pointer  px-3 py-5 "
+        className="list-none text-md lg:text-md cursor-pointer  px-3 py-5 "
         variants={menuLinkVariants}
       >
         <Link
           href="/"
           className={`${
-            router.pathname === "/" ? "text-blue-500" : "text-white m"
+            router.pathname === "/" ? "text-blue-500" : "text-white"
           } `}
         >
           <span className="mx-2">Home</span>

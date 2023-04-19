@@ -8,7 +8,7 @@ import { AnimatePresence } from "framer-motion";
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <AnimatePresence mode="wait">
+      <AnimatePresence mode="wait" initial={true}>
         {/* <ThemeProvider enableSystem={true} attribute="class"> */}
 
         <div className="lg:mt-10">

@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Hero from "../components/Hero";
 import { motion } from "framer-motion";
+import Layout from "../components/Layout";
 
 const Home = () => {
   const easing = [0.6, -0.05, 0, 0.1, 0.9];
@@ -28,14 +29,16 @@ const Home = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <motion.div
-        initil="initial"
-        animate="animate"
-        variants="fadeinUp"
-        exit={{ opacity: 0 }}
-      >
-        <Hero />
-      </motion.div>
+      <Layout>
+        <motion.div
+          initil="initial"
+          animate="animate"
+          variants="fadeinUp"
+          exit={{ opacity: 0 }}
+        >
+          <Hero />
+        </motion.div>
+      </Layout>
     </>
   );
 };
