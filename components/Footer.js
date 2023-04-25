@@ -31,12 +31,6 @@ const Footer = () => {
           </button>
         </Link>
       </div>
-
-      {/* <Link href="https://mailto:canguden@gmail.com" target="_blank">
-    <button className="text-4xl mt-5 ml-2 font-light flex flex-row   cursor-pointer hover:text-white dark:hover:text-white">
-      Email
-    </button>
-  </Link> */}
     </div>
   );
 };
