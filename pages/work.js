@@ -24,6 +24,31 @@ export default function Projects() {
         <div className="font-semibold h-full max-w-3xl mx-auto hover:text-white">
           <div className="mt-20">
             <p className=" text-md lg:text-lg mt-10 font-light text-gray-200">
+              Agency Website
+            </p>
+            <Link href="https://nextcode-canguden.vercel.app" target="_blank">
+              <p
+                className="text-4xl flex flex-row justify-between lg:text-4xl cursor-pointer font-light text-gray-200 relative transition-all w-min-content
+          before:w-0 before:h-1 before:absolute before:bottom-0 before:right-0 before:bg-purple-600 before:transition-all before:duration-500
+          hover:before:w-full hover:before:left-0 hover:before:bg-indigo-700 
+            "
+              >
+                {" "}
+                Digital Agency{" "}
+                <FaLink className=" cursor-pointer h-5 w-5 mt-2" />
+              </p>
+            </Link>
+            <Link
+              href="https://github.com/canguden/digital-agency-website"
+              target="_blank"
+            >
+              <div className="flex flex-row mt-5 justify-between">
+                <FaGithub className="h-5 w-5 lg:h-6 lg:w-6 cursor-pointer hover:text-blue-700" />
+              </div>
+            </Link>
+          </div>
+          <div className="mt-20">
+            <p className=" text-md lg:text-lg mt-10 font-light text-gray-200">
               Social
             </p>
             <Link href="https://yellowspot.app" target="_blank">
@@ -56,8 +81,7 @@ export default function Projects() {
             "
               >
                 {" "}
-                Amsterdam Party Agenda{" "}
-                <FaLink className=" cursor-pointer h-5 w-5 mt-2" />
+                Party Agenda <FaLink className=" cursor-pointer h-5 w-5 mt-2" />
               </p>
             </Link>
             <Link
@@ -94,6 +118,7 @@ export default function Projects() {
                 </div>
               </Link>
             </div>
+
             <div className="mt-20">
               <p className=" text-md lg:text-lg mt-10 font-light text-gray-200">
                 Productivity Browser
@@ -115,6 +140,9 @@ export default function Projects() {
               </Link>
               <div className="flex flex-row mt-5 justify-between">
                 <FaPython className="h-5 w-5 lg:h-6 lg:w-6 cursor-pointer hover:text-blue-700" />
+                <Link href="/downloads" className="hover:text-blue-700">
+                  Download
+                </Link>
               </div>
             </div>
 
