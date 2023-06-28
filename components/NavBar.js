@@ -32,7 +32,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="flex flex-1 justify-between lg:mx-20">
+      <div className="flex flex-1 justify-between px-6 lg:mx-20">
         <motion.nav
           className="flex flex-row"
           initial={false}

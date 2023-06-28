@@ -37,8 +37,7 @@ const Home = () => {
           variants="fadeinUp"
           exit={{ opacity: 0 }}
         >
-          <Geo />
-          {/* <Hero /> */}
+          <Hero />
         </motion.div>
       </Layout>
     </>

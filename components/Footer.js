@@ -3,7 +3,7 @@ import { HiArrowLongRight, HiArrowLongUp } from "react-icons/hi2";
 
 const Footer = () => {
   return (
-    <div className="mt-10  max-w lg:mx-20  bottom-10 justify-end mx-auto flex flex-col lg:flex lg:flex-row mb-20">
+    <div className="mt-10  max-w lg:mx-20 px-6 bottom-10 justify-end mx-auto flex flex-col lg:flex lg:flex-row mb-20">
       <Link href="https://github.com/canguden" target="_blank">
         <button className="text-xl mt-5 ml-2 lg:ml-5 font-light flex flex-row cursor-pointer group hover:text-white ">
           <span>Github</span>

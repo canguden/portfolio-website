@@ -5,7 +5,7 @@
 
 @layer base {
   body {
-    @apply mx-auto px-6  bg-black text-gray-100;
+    @apply mx-auto   bg-black text-gray-100;
   }
 }
 
