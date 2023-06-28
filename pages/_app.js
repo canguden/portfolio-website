@@ -11,13 +11,13 @@ function MyApp({ Component, pageProps }) {
       <AnimatePresence mode="wait" initial={true}>
         {/* <ThemeProvider enableSystem={true} attribute="class"> */}
 
-        <div className="lg:mt-10">
+        {/* <div className="lg:mt-10">
           <NavBar />
-        </div>
+        </div> */}
         <Component {...pageProps} />
-        <div className="">
+        {/* <div className="">
           <Footer />
-        </div>
+        </div> */}
         <Analytics />
         {/* </ThemeProvider> */}
       </AnimatePresence>

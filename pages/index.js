@@ -2,6 +2,7 @@ import Head from "next/head";
 import Hero from "../components/Hero";
 import { motion } from "framer-motion";
 import Layout from "../components/Layout";
+import Geo from "../components/Geo";
 
 const Home = () => {
   const easing = [0.6, -0.05, 0, 0.1, 0.9];
@@ -36,7 +37,8 @@ const Home = () => {
           variants="fadeinUp"
           exit={{ opacity: 0 }}
         >
-          <Hero />
+          <Geo />
+          {/* <Hero /> */}
         </motion.div>
       </Layout>
     </>

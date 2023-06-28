@@ -1,16 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   body {
-    @apply mx-auto px-6  bg-zinc-900 text-gray-200;
+    @apply mx-auto px-6  bg-black text-gray-100;
   }
 }
 
 * {
-  font-family: "QuickSand", Open sans, sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: lighter;
   scroll-behavior: smooth;
   -webkit-tap-highlight-color: transparent;
