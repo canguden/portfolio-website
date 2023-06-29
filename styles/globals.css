@@ -1,16 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   body {
-    @apply mx-auto   bg-black text-gray-100;
+    @apply bg-slate-300 text-gray-900 duration-300 dark:bg-slate-900 dark:text-gray-300;
   }
 }
 
 * {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: lighter;
   scroll-behavior: smooth;
   -webkit-tap-highlight-color: transparent;

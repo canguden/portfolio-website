@@ -1,27 +1,19 @@
 import "../styles/globals.css";
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
 import { Analytics } from "@vercel/analytics/react";
 import { ThemeProvider } from "next-themes";
 import { AnimatePresence } from "framer-motion";
+import Header from "../components/Header";
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <div className="border-4 lg:border-[12px] border-white w-full">
-        <AnimatePresence mode="wait" initial={true}>
-          {/* <ThemeProvider enableSystem={true} attribute="class"> */}
-          <div className="lg:mt-10">
-            <NavBar />
-          </div>
+      <AnimatePresence mode="wait" initial={true}>
+        <ThemeProvider enableSystem={true} attribute="class">
+          <Header />
           <Component {...pageProps} />
-          <div className="">
-            <Footer />
-          </div>
           <Analytics />
-          {/* </ThemeProvider> */}
-        </AnimatePresence>
-      </div>
+        </ThemeProvider>
+      </AnimatePresence>
     </>
   );
 }
