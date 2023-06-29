@@ -27,7 +27,7 @@ const contact = () => {
         <meta name="Contact" content="hello@canguden.com" />
       </Head>
       <Layout>
-        <div className="  mt-10 lg:mt-32 mx-auto max-w-3xl  flex max-w">
+        <div className=" mt-10 lg:mt-32 mx-auto max-w-3xl  flex max-w">
           <h1 className="text-4xl lg:text-5xl uppercase font-bold text-black dark:text-white ">
             Contact.
           </h1>

@@ -5,7 +5,7 @@
 
 @layer base {
   body {
-    @apply bg-slate-300 text-gray-900 duration-300 dark:bg-slate-900 dark:text-gray-300;
+    @apply bg-slate-300 text-gray-900 duration-300 dark:bg-slate-900 dark:text-gray-300 px-4;
   }
 }
 

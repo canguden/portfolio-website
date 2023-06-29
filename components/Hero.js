@@ -20,12 +20,12 @@ const Hero = () => {
 
   return (
     <>
-      <div className="  mt-10 lg:mt-32 mx-auto max-w-3xl px-2 flex max-w">
+      <div className="  mt-10 lg:mt-32 mx-auto max-w-3xl  flex max-w">
         <h1 className="text-4xl lg:text-5xl uppercase font-bold text-black dark:text-white ">
           Hello.
         </h1>
       </div>
-      <div className="max-w-3xl px-2 mt-5  mx-auto flex lg:mt-5 font-semibold mx-30">
+      <div className="max-w-3xl  mt-5  mx-auto flex lg:mt-5 font-semibold mx-30 ">
         <div className="">
           <p className="flex  mx-auto text-md lg:text-md leading-normal lg:leading-normal font-light">
             <span className="">
@@ -40,22 +40,22 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="max-w-3xl px-2  flex flex-col justify-center mx-auto mt-5 font-semibold">
-        <p className=" mx-auto text-md lg:text-md leading-normal lg:leading-normal font-light">
+      <div className="max-w-3xl   flex flex-col mx-auto mt-5 font-semibold justify-center">
+        <p className=" mx-auto text-md lg:text-md leading-normal lg:leading-normal font-light justify-center">
           I specialise in designing, developing and creating beautiful and
           functional interfaces using React, Next.js, Vue.js and other hip
           frameworks.
         </p>
       </div>
 
-      <div className="mt-5 px-2 max-w-3xl mx-auto ">
+      <div className="mt-5 max-w-3xl mx-auto justify-center ">
         <p className="max-w-7xl text-md lg:text-md leading-normal lg:leading-normal font-light">
           My goal is to create websites that are both visually appealing and
           easy to use. I am always looking for new challenges and opportunities.
         </p>
       </div>
 
-      <div className="mt-10 px-2 max-w-3xl mx-auto ">
+      <div className="mt-10  max-w-3xl mx-auto justify-center ">
         <Link href="/about">
           <p className="max-w-7xl flex flex-row items-center text-md lg:text-md leading-normal lg:leading-normal font-light">
             Learn more about me{" "}
@@ -66,7 +66,7 @@ const Hero = () => {
         </Link>
       </div>
 
-      <div className="mt-10 px-2 max-w-3xl mx-auto ">
+      <div className="mt-10 max-w-3xl mx-auto ">
         <div className="max-w-7xl text-md lg:text-md leading-normal lg:leading-normal font-light">
           <ul className="flex flex-row gap-12">
             <li>
