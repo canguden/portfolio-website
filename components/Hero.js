@@ -69,24 +69,36 @@ const Hero = () => {
       <div className="mt-10 max-w-3xl mx-auto ">
         <div className="max-w-7xl text-md lg:text-md leading-normal lg:leading-normal font-light">
           <ul className="flex flex-row gap-12">
-            <li>
-              <FaTwitter />
-            </li>
-            <li>
-              <FaLinkedin />
-            </li>
-            <li>
-              <FaGithub />
-            </li>
-            <li>
-              <FaInstagram />
-            </li>
-            <li>
-              <FaDribbble />
-            </li>
-            <li>
-              <FaPinterest />
-            </li>
+            <Link href="https://twitter.com/_canguden" target="_blank">
+              <li>
+                <FaTwitter />
+              </li>
+            </Link>
+            <Link href="https://www.linkedin.com/in/can-guden/" target="_blank">
+              <li>
+                <FaLinkedin />
+              </li>
+            </Link>
+            <Link href="https://github.com/canguden" target="_blank">
+              <li>
+                <FaGithub />
+              </li>
+            </Link>
+            <Link href="https://instagram.com/cangudenn1" target="_blank">
+              <li>
+                <FaInstagram />
+              </li>
+            </Link>
+            <Link href="https://dribbble.com/canguden" target="_blank">
+              <li>
+                <FaDribbble />
+              </li>
+            </Link>
+            <Link href="https://nl.pinterest.com/canguden/" target="_blank">
+              <li>
+                <FaPinterest />
+              </li>
+            </Link>
           </ul>
         </div>
       </div>

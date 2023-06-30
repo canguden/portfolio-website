@@ -26,7 +26,7 @@ function BacktoTop() {
       {backToTopButton && (
         <button
           onClick={scrollUp}
-          className="fixed bottom-[50px] right-[10px] md:right-[50px] lg:w-[550px] text-5xl"
+          className="fixed bottom-[50px] right-[10px] md:right-[50px] lg:w-[400px] text-5xl"
         >
           <BsArrowUp className=" bg-slate-800 dark:bg-slate-500 py-1 px-1 text-white rounded-full" />
         </button>
