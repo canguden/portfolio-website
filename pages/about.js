@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Layout from "../components/Layout";
 import { HiArrowLongRight } from "react-icons/hi2";
+import BacktoTop from "../components/BackToTop";
 
 const About = () => {
   return (
@@ -65,6 +66,7 @@ const About = () => {
             </p>
           </Link>
         </div>
+        <BacktoTop />
       </Layout>
     </>
   );

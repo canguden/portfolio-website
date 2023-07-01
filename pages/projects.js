@@ -44,7 +44,7 @@ export default function Projects() {
           </h1>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-1 max-w-3xl mx-auto mt-10 mb-10 gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-1 max-w-3xl mx-auto mt-10 mb-10 gap-16 lg:gap-48">
           <div className=" mt-20 w-full  max-w-4xl mb-5">
             <Link href="https://github.com/canguden/ChatGPT" target="_blank">
               <Image
@@ -52,7 +52,7 @@ export default function Projects() {
                 height={1500}
                 width={1500}
                 alt="ams"
-                className=" w-full lg:w-[700px] h-full rounded-md object-fill shadow-xl hover:scale-105 duration-300"
+                className=" w-full lg:w-[700px] h-[200px] lg:h-full rounded-md object-fill shadow-xl hover:scale-105 duration-300"
               />
               <div className="mt-4">
                 <h2 className="mt-2 mb-2 text-xl font-bold underline underline-offset-8">
@@ -68,14 +68,14 @@ export default function Projects() {
             </Link>
           </div>
 
-          <div className="  mt-24 w-full  max-w-4xl mb-5 ">
+          <div className="  w-full  max-w-4xl mb-5 ">
             <Link href="https://vakantiescout.nl" target="_blank">
               <Image
                 src={scout}
                 height={1500}
                 width={1500}
                 alt="ams"
-                className=" w-full lg:w-[700px] h-70 rounded-md object-fill shadow-xl hover:scale-105 duration-300"
+                className=" w-full lg:w-[700px] h-[200px] lg:h-full rounded-md object-fill shadow-xl hover:scale-105 duration-300"
               />
               <div className="mt-4">
                 <h2 className="mt-2 mb-2 text-xl font-bold underline underline-offset-8">
@@ -99,14 +99,14 @@ export default function Projects() {
                 height={1500}
                 width={1500}
                 alt="ams"
-                className=" w-full lg:w-[700px] h-70 rounded-md object-fill shadow-xl hover:scale-105 duration-300"
+                className=" w-full lg:w-[700px] h-[200px] lg:h-full  rounded-md object-fill shadow-xl hover:scale-105 duration-300"
               />
               <div className="mt-4">
                 <h2 className="mt-2 mb-2 text-xl font-bold underline underline-offset-8">
                   Agenda
                 </h2>
               </div>
-              <p>
+              <p className="mb-2">
                 Designed and developed an Agenda for the party scene in Amterdam
               </p>
               <p className="flex flex-row gap-2 text-xl">
@@ -117,13 +117,13 @@ export default function Projects() {
           </div>
 
           <div className=" mt-5 w-full  max-w-4xl mb-10">
-            <Link href="nextcode-canguden.vercel.app/" target="_blank">
+            <Link href="https://nextcode-canguden.vercel.app/" target="_blank">
               <Image
                 src={digital}
                 height={1500}
                 width={1500}
                 alt="ams"
-                className=" w-full lg:w-[700px] h-full rounded-md object-fill shadow-xl hover:scale-105 duration-300"
+                className=" w-full lg:w-[700px] h-[200px] lg:h-full  rounded-md object-fill shadow-xl hover:scale-105 duration-300"
               />
               <div className="mt-4">
                 <h2 className="mt-2 mb-2 text-xl font-bold underline underline-offset-8">
@@ -139,14 +139,14 @@ export default function Projects() {
             </Link>
           </div>
 
-          <div className=" mt-20 w-full  max-w-4xl mb-10">
+          <div className=" w-full  max-w-4xl mb-10">
             <Link href="https://yellowspots.nl" target="_blank">
               <Image
                 src={yellow}
                 height={1500}
                 width={1500}
                 alt="ams"
-                className=" w-full lg:w-[700px] h-full rounded-md object-fill shadow-xl hover:scale-105 duration-300"
+                className=" w-full lg:w-[700px] h-[200px] lg:h-full  rounded-md object-fill shadow-xl hover:scale-105 duration-300"
               />
               <div className="mt-4">
                 <h2 className="mt-2 mb-2 text-xl font-bold underline underline-offset-8">
@@ -163,7 +163,7 @@ export default function Projects() {
             </Link>
           </div>
 
-          <div className=" mt-20  w-full  max-w-4xl mb-5">
+          <div className="  w-full  max-w-4xl mb-5">
             <Link
               href="https://marketplace.visualstudio.com/items?itemName=th3g3ntl3man.mrrobot"
               target="_blank"
@@ -173,7 +173,7 @@ export default function Projects() {
                 height={1500}
                 width={1500}
                 alt="ams"
-                className=" w-full lg:w-[700px] h-[500px] rounded-md object-fill shadow-xl hover:scale-105 duration-300"
+                className=" w-full lg:w-[700px] h-[200px] lg:h-full  rounded-md object-fill shadow-xl hover:scale-105 duration-300"
               />
               <div className="mt-4">
                 <h2 className="mt-2 mb-2 text-xl font-bold underline underline-offset-8">
@@ -199,7 +199,7 @@ export default function Projects() {
                 height={1500}
                 width={1500}
                 alt="ams"
-                className=" w-full lg:w-[700px] h-[500px] rounded-md object-fill shadow-xl hover:scale-105 duration-300"
+                className=" w-full lg:w-[700px] h-[200px] lg:h-full  rounded-md object-fill shadow-xl hover:scale-105 duration-300"
               />
               <div className="mt-4">
                 <h2 className="mt-2 mb-2 text-xl font-bold underline underline-offset-8">
