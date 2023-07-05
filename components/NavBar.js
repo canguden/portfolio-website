@@ -31,7 +31,7 @@ const Navbar = () => {
                 : ""
             } `}
           >
-            <li className="text-md flex cursor-pointer  hover:underline hover:decoration-white hover:underline-offset-8 ">
+            <li className="text-md flex cursor-pointer  hover:underline  hover:underline-offset-8 ">
               About
             </li>
           </Link>
@@ -57,7 +57,9 @@ const Navbar = () => {
                 : ""
             } `}
           >
-            <li className="text-md flex cursor-pointer">Contact</li>
+            <li className="text-md flex cursor-pointer hover:underline  hover:underline-offset-8">
+              Contact
+            </li>
           </Link>
           <li className="">{mounted && <ThemeChanger />}</li>
         </ul>

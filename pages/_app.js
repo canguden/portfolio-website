@@ -2,7 +2,6 @@ import "../styles/globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import { ThemeProvider } from "next-themes";
 import { AnimatePresence } from "framer-motion";
-import Header from "../components/Header";
 import Navbar from "../components/NavBar";
 
 function MyApp({ Component, pageProps }) {
