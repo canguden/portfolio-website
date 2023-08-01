@@ -16,11 +16,6 @@ const About = () => {
 
       <Layout>
         <motion.div exit={{ opacity: 0 }} className="mt-10 max-w-3xl mx-auto">
-          <div className="  mt-10 lg:mt-32 mx-auto max-w-3xl  flex max-w">
-            <h1 className="text-4xl lg:text-5xl uppercase font-bold text-black dark:text-white ">
-              About me.
-            </h1>
-          </div>
           <p className="max-w-7xl mt-5  text-md leading-normal lg:leading-normal font-light">
             Love for Basketball, Art, Chess, Games, Snowboarding, Music, Reading
             and Travel.
@@ -56,17 +51,6 @@ const About = () => {
             />
           </div>
         </div>
-        <div className=" max-w-3xl mx-auto mb-10 ">
-          <Link href="/projects">
-            <p className="max-w-7xl flex flex-row  items-center text-md lg:text-md leading-normal lg:leading-normal">
-              Check out my projects{" "}
-              <span className="ml-1">
-                <HiArrowLongRight />
-              </span>
-            </p>
-          </Link>
-        </div>
-        <BacktoTop />
       </Layout>
     </>
   );

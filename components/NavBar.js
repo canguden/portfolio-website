@@ -15,15 +15,20 @@ const Navbar = () => {
   const router = useRouter();
 
   return (
-    <div className="max-w-5xl mx-auto  mt-10 flex justify-between items-center h-[65px]">
-      <div className="flex max-w-5xl  justify-between flex-row items-center uppercase text-xl font-extrabold">
-        <Link href="/" className="flex flex-row ">
-          <Image src={logo} height={50} width={50} alt="logo" className="" />
-        </Link>
-      </div>
-      <div>
-        <ul className="hidden xl:flex gap-12 xl:flex-row items-center font-light">
+    <>
+      <div className="mt-10 flex justify-between items-center h-[65px]">
+        <ul className="flex gap-6 flex-row items-center font-light">
           <Link
+            href="/"
+            className={`${
+              router.pathname === "/" ? "underline  underline-offset-8" : ""
+            } `}
+          >
+            <li className="text-md flex cursor-pointer  hover:underline  hover:underline-offset-8 ">
+              home
+            </li>
+          </Link>
+          {/* <Link
             href="/about"
             className={`${
               router.pathname === "/about"
@@ -32,11 +37,11 @@ const Navbar = () => {
             } `}
           >
             <li className="text-md flex cursor-pointer  hover:underline  hover:underline-offset-8 ">
-              About
+              about
             </li>
-          </Link>
+          </Link> */}
 
-          <Link
+          {/* <Link
             href="/projects"
             className={`${
               router.pathname === "/projects"
@@ -48,17 +53,17 @@ const Navbar = () => {
               {" "}
               Projects
             </li>
-          </Link>
+          </Link> */}
           <Link
-            href="/contact"
+            href="/about"
             className={`${
-              router.pathname === "/contact"
+              router.pathname === "/about"
                 ? "underline  underline-offset-8"
                 : ""
             } `}
           >
             <li className="text-md flex cursor-pointer hover:underline  hover:underline-offset-8">
-              Contact
+              about
             </li>
           </Link>
           <li className="">{mounted && <ThemeChanger />}</li>
@@ -140,14 +145,7 @@ const Navbar = () => {
           </ul>
         </nav>
       </div>
-      {/* Left side */}
-      <div className="flex items-center xl:hidden">
-        <div className="p-4 mr-2 mb-1">{mounted && <ThemeChanger />}</div>
-        <div onClick={() => setNav(!nav)} className="cursor-pointer">
-          <AiOutlineMenu size={30} className="" />
-        </div>
-      </div>
-    </div>
+    </>
   );
 };
 

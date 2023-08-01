@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import { motion } from "framer-motion";
 import Layout from "../components/Layout";
 import Geo from "../components/Geo";
+import Design from "../components/Design";
 
 const Home = () => {
   const easing = [0.6, -0.05, 0, 0.1, 0.9];
@@ -23,7 +24,7 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Can Guden | Web Developer, Designer, Entrepreneur</title>
+        <title>Can Güden</title>
         <meta
           name="description"
           content="Can Guden, Amsterdam, The Netherlands"
