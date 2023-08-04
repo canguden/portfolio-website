@@ -43,7 +43,6 @@ const Hero = () => {
       </div>
 
       <div className="mt-5  ">
-        <div>🌍 Vakantiescout</div>
         <div>👨‍💻 Remotescout</div>
         <div>🌞 Yellowspots</div>
       </div>
