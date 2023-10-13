@@ -11,10 +11,11 @@ import {
   FaPinterest,
   FaTwitter,
 } from "react-icons/fa";
-import { SiNextdotjs } from "react-icons/si";
+import { SiNextdotjs, SiPython } from "react-icons/si";
 import projectImage from "../public/canguden.jpg";
 import { HiArrowLongRight } from "react-icons/hi2";
 import { BsArrowUpRight } from "react-icons/bs";
+import { FaLaptopCode } from "react-icons/fa";
 
 const Hero = () => {
   const [mounted, setMounted] = useState(false);
@@ -22,35 +23,51 @@ const Hero = () => {
 
   return (
     <>
+      <div className="text-sm mt-10 flex ">
+        <pre>{"#include </stdio.h>"}</pre>
+      </div>
+
       <div className="  mt-10 flex ">
-        <h1 className="text-2xl lg:text-md  font-bold text-black dark:text-white ">
-          hello, i'm can <span className="animate-wave text-2xl">👋</span>
+        <h1 className="text-2xl flex items-center gap-2 lg:text-md  font-bold text-black dark:text-white ">
+          <pre>{"<h1>Can Güden</h1>"}</pre>
         </h1>
+      </div>
+      <div className="mt-5  ">
+        <Link href="https://github.com/canguden" target="_blank">
+          <div className="flex items-center gap-2">
+            <FaLaptopCode /> Software Developer
+          </div>
+        </Link>
       </div>
 
       <p className="flex mt-5 justify-start items-center mx-auto text-md lg:text-md leading-normal lg:leading-normal font-light">
-        <span className="flex shadow-sm items-center rounded-md  border-2 py-1 px-1">
+        <span className="flex shadow-sm items-center rounded-md border-gray-100 dark:border-zinc-900 border-2 py-1 px-1 duration-300">
           <SiNextdotjs />
-          <span className="ml-1 mr-1 border-1  border-gray-100 dark:border-zinc-900">
-            Next.js
-          </span>
+          <span className="ml-1 mr-1  ">Next.js</span>
         </span>
-        <span className="ml-2">4 life</span>
+      </p>
+
+      <p className="flex mt-5 justify-start items-center mx-auto text-md lg:text-md leading-normal lg:leading-normal font-light">
+        <span className="flex shadow-sm items-center rounded-md border-gray-100 dark:border-zinc-900 border-2 py-1 px-1 duration-300">
+          <SiPython />
+          <span className="ml-1 mr-1  ">Python</span>
+        </span>
+      </p>
+
+      <p className="flex mt-5 justify-start items-center mx-auto text-md lg:text-md leading-normal lg:leading-normal font-light">
+        <span className="flex shadow-sm items-center rounded-md border-gray-100 dark:border-zinc-900 border-2 py-1 px-1 duration-300">
+          <span className="ml-1 mr-1  ">Baasically everything</span>
+        </span>
       </p>
 
       <div className="text-4xl mt-10 flex underline underline-offset-8">
         <pre>{"<Big>Ain't my design\nskills sick?</Big>"}</pre>
       </div>
 
-      <div className="mt-5  ">
-        <div>👨‍💻 Remotescout</div>
-        <div>🌞 Yellowspots</div>
-      </div>
-
-      <div className="mt-10   mx-auto justify-center ">
-        <Link href="https://twitter.com/_canguden">
+      <div className="mt-10   mx-auto justify-center hover:underline hover:underline-offset-2">
+        <Link href="https://instagram.com/cangudenn1">
           <p className="max-w-7xl flex flex-row items-center text-md lg:text-md leading-normal lg:leading-normal font-light">
-            Twitter{" "}
+            follow me on Instagram{" "}
             <span className="ml-1">
               <BsArrowUpRight />
             </span>
