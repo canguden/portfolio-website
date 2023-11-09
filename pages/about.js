@@ -5,6 +5,12 @@ import { motion } from "framer-motion";
 import Layout from "../components/Layout";
 import { HiArrowLongRight } from "react-icons/hi2";
 import BacktoTop from "../components/BackToTop";
+import fall from "../public/fall.jpg";
+import snow from "../public/snow.jpg";
+import etna from "../public/etna.jpg";
+import venice from "../public/venice.jpg";
+import sveti from "../public/svetistef.jpg";
+import bcn from "../public/bcn.jpg";
 
 const About = () => {
   return (
@@ -22,32 +28,69 @@ const About = () => {
           </p>
 
           <p className="max-w-3xl  mt-5 text-md leading-normal lg:leading-normal font-light">
-            Photoroll Backshots, Italy, Greece, Spain & Montenegro
+            Travel Collection
           </p>
         </motion.div>
 
-        <div className="max-w-3xl flex flex-col col-span-2  mx-auto mt-10 font-semibold">
-          <div className="max-w-7xl">
+        <div className="columns-2 sm:columns-3 gap-4 my-8">
+          <div className="relative h-40 mb-4">
             <Image
-              src="/etna.jpg"
-              alt="etna"
-              className="rounded-t-xl"
-              width={500}
-              height={500}
+              alt=""
+              src={fall}
+              fill
+              sizes="(max-width: 768px) 213px, 33vw"
+              priority
+              className="rounded-lg object-cover"
             />
+          </div>
+          <div className="relative h-80 mb-4 sm:mb-0">
             <Image
-              src="/Greece_hero.jpg"
-              alt="greece"
-              width={500}
-              height={500}
+              alt=""
+              src={snow}
+              fill
+              sizes="(max-width: 768px) 213px, 33vw"
+              priority
+              className="rounded-lg object-cover object-[-16px] sm:object-center"
             />
-            <Image src="/bcn.jpg" alt="bcn" width={500} height={500} />
+          </div>
+          <div className="relative h-40 sm:h-80 sm:mb-4">
             <Image
-              src="/svetistef.jpg"
-              alt="montenegro"
-              width={500}
-              height={500}
-              className="mb-10 rounded-b-xl"
+              alt=""
+              src={venice}
+              fill
+              sizes="(max-width: 768px) 213px, 33vw"
+              priority
+              className="rounded-lg object-cover object-top sm:object-center"
+            />
+          </div>
+          <div className="relative h-40 mb-4 sm:mb-0">
+            <Image
+              alt=""
+              src={sveti}
+              fill
+              sizes="(max-width: 768px) 213px, 33vw"
+              priority
+              className="rounded-lg object-cover"
+            />
+          </div>
+          <div className="relative h-40 mb-4">
+            <Image
+              alt=""
+              src={bcn}
+              fill
+              sizes="(max-width: 768px) 213px, 33vw"
+              priority
+              className="rounded-lg object-cover"
+            />
+          </div>
+          <div className="relative h-80">
+            <Image
+              alt="no seo here"
+              src={etna}
+              fill
+              sizes="(min-width: 768px) 213px, 33vw"
+              priority
+              className="rounded-lg object-cover"
             />
           </div>
         </div>

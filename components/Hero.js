@@ -40,31 +40,11 @@ const Hero = () => {
         </Link>
       </div>
 
-      <p className="flex mt-5 justify-start items-center mx-auto text-md lg:text-md leading-normal lg:leading-normal font-light">
-        <span className="flex shadow-sm items-center rounded-md border-gray-100 dark:border-zinc-900 border-2 py-1 px-1 duration-300">
-          <SiNextdotjs />
-          <span className="ml-1 mr-1  ">Next.js</span>
-        </span>
-      </p>
-
-      <p className="flex mt-5 justify-start items-center mx-auto text-md lg:text-md leading-normal lg:leading-normal font-light">
-        <span className="flex shadow-sm items-center rounded-md border-gray-100 dark:border-zinc-900 border-2 py-1 px-1 duration-300">
-          <SiPython />
-          <span className="ml-1 mr-1  ">Python</span>
-        </span>
-      </p>
-
-      <p className="flex mt-5 justify-start items-center mx-auto text-md lg:text-md leading-normal lg:leading-normal font-light">
-        <span className="flex shadow-sm items-center rounded-md border-gray-100 dark:border-zinc-900 border-2 py-1 px-1 duration-300">
-          <span className="ml-1 mr-1  ">Baasically everything</span>
-        </span>
-      </p>
-
-      <div className="text-4xl mt-10 flex underline underline-offset-8">
+      <div className="text-2xl sm:text-4xl mt-10 flex underline underline-offset-8">
         <pre>{"<Big>Ain't my design\nskills sick?</Big>"}</pre>
       </div>
 
-      <div className="mt-10   mx-auto justify-center hover:underline hover:underline-offset-2">
+      <div className="mt-10  mb-20 mx-auto justify-center hover:underline hover:underline-offset-2">
         <Link href="https://instagram.com/cangudenn1">
           <p className="max-w-7xl flex flex-row items-center text-md lg:text-md leading-normal lg:leading-normal font-light">
             follow me on Instagram{" "}

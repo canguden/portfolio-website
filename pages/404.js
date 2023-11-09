@@ -9,11 +9,11 @@ const NotFound = () => {
             <div className="absolute">
               <div className="">
                 <h1 className="my-2 dark:text-black font-bold text-2xl">
-                  Oops, deze pagina bestaat niet
+                  Oi, you&apos;ve lost your way mate
                 </h1>
                 <Link href="/">
                   <button className="sm:w-full lg:w-auto my-2 rounded-full outline-none md py-4 px-8 text-center bg-slate-600 text-white hover:bg-slate-700 ">
-                    Terug naar Home
+                    Back home
                   </button>
                 </Link>
               </div>

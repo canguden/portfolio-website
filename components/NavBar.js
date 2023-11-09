@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="mt-10 flex justify-between items-center h-[65px]">
+      <div className="p-4 max-w-5xl mx-auto flex justify-between items-center h-[65px]">
         <ul className="flex gap-6 flex-row items-center font-light">
           <Link
             href="/"

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Layout from "../components/Layout";
 import Geo from "../components/Geo";
 import Design from "../components/Design";
+import NewUpdate from "../components/NewUpdate";
 
 const Home = () => {
   const easing = [0.6, -0.05, 0, 0.1, 0.9];
@@ -37,9 +38,8 @@ const Home = () => {
           animate="animate"
           variants="fadeinUp"
           exit={{ opacity: 0 }}
-        >
-          <Hero />
-        </motion.div>
+        ></motion.div>
+        <NewUpdate />
       </Layout>
     </>
   );

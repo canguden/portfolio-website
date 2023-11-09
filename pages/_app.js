@@ -9,8 +9,8 @@ function MyApp({ Component, pageProps }) {
     <>
       <AnimatePresence mode="wait" initial={true}>
         <ThemeProvider enableSystem={true} attribute="class">
-          <Navbar />
           <Component {...pageProps} />
+
           <Analytics />
         </ThemeProvider>
       </AnimatePresence>
