@@ -13,9 +13,9 @@ const ThemeChanger = () => {
       onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
     >
       {resolvedTheme === "dark" ? (
-        <BsCircleHalf className="mt-1 h-4 w-4 text-gray-300" />
+        <BsCircleHalf className="mt-1 h-5 w-5 text-gray-300" />
       ) : (
-        <BsCircleHalf className="mt-1 h-4 w-4 text-slate-900" />
+        <BsCircleHalf className="mt-1 h-5 w-5 text-slate-900" />
       )}
     </button>
   );
