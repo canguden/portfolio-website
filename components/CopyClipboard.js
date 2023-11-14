@@ -26,10 +26,10 @@ export const CopyClipboard = ({ content }) => {
   return (
     <div>
       {isCopied ? (
-        <FiCheck className="h-6 w-6 text-blue-500 duration-300" />
+        <FiCheck className="h-6 w-6 text-blue-500 " />
       ) : (
         <FiCopy
-          className="h-6 w-6 active:translate-y-1 hover:cursor-pointer duration-300"
+          className="h-6 w-6 active:translate-y-1 hover:cursor-pointer"
           title="Copy"
           onClick={handleCopy}
         />
