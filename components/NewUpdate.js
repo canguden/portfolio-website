@@ -41,11 +41,11 @@ const NewUpdate = () => {
         </Link>{" "}
         and{" "}
         <Link
-          href="https://devdevgo.net"
+          href="https://cocktailjs.dev"
           className="relative z-20 hover:bg-blue-500 opactiy-60 duration-300"
           target="_blank"
         >
-          DevDevGo.net.
+          cocktailjs.dev.
           <span className="absolute z-10 bottom-0 left-0 w-full border-b-2 border-blue-500 opacity-60"></span>
         </Link>{" "}
         Most of my work is open source and publicly available on{" "}
