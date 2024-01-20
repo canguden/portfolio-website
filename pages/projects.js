@@ -68,30 +68,6 @@ export default function Projects() {
             </Link>
           </div>
 
-          <div className="  w-full  max-w-4xl mb-5 ">
-            <Link href="https://vakantiescout.nl" target="_blank">
-              <Image
-                src={scout}
-                height={1500}
-                width={1500}
-                alt="ams"
-                className=" w-full lg:w-[700px] h-[200px] lg:h-full rounded-md object-fill shadow-xl hover:scale-105 duration-300"
-              />
-              <div className="mt-4">
-                <h2 className="mt-2 mb-2 text-xl font-bold underline underline-offset-8">
-                  Vakantiescout
-                </h2>
-              </div>
-              <p className="mb-2">
-                Website voor reisorganisatie, logo design, webdesign, web
-                development
-              </p>
-              <p className="flex flex-row gap-2 text-xl">
-                <SiNextdotjs /> <SiTypescript /> <SiTailwindcss /> <SiMongodb />
-              </p>
-            </Link>
-          </div>
-
           <div className="   mt-5 w-full  max-w-4xl mb-5 ">
             <Link href="https://amstonight.com" target="_blank">
               <Image
