@@ -6,22 +6,13 @@ import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import dynamic from "next/dynamic";
 import Link from "next/link";
+import ViewCounter from "./ViewCounter";
 
-const NewUpdate = ({ initialCount }) => {
-  const [viewCount, setViewCount] = useState(24323);
-
-  useEffect(() => {
-    incrementViewCount();
-  }, []);
-
-  const incrementViewCount = () => {
-    setViewCount((prevCount) => prevCount + 1);
-  };
-
+const NewUpdate = () => {
   return (
     <>
       <div className="flex items-center gap-2 justify-end">
-        Website Views: <div id="views">{viewCount.toLocaleString()}</div>
+        <ViewCounter />
       </div>
       <div className="max-w-3xl xl:mx-48  z-50 mt-20 mb-20 sm:mt-24 px-2 justify-center mx-4 text-lg md:text-2xl leading-loose">
         {/* <span className="justify-end text-right items-end flex mr-10">

@@ -1,22 +1,21 @@
 // components/ViewCounter.js
 import { useState, useEffect } from "react";
 
-const ViewCounter = ({ initialCount }) => {
-  const [viewCount, setViewCount] = useState(initialCount);
+const ViewCounter = () => {
+  const [viewCount, setViewCount] = useState(0);
 
   useEffect(() => {
-    // Simulate incrementing view count on page load (you can replace this with your actual tracking logic)
-    incrementViewCount();
+    // Increment the count on the server
+    fetch("/api/increment")
+      .then((response) => response.json())
+      .then((data) => setViewCount(data.count))
+      .catch((error) => console.error("Error incrementing view count:", error));
   }, []);
 
-  const incrementViewCount = () => {
-    setViewCount((prevCount) => prevCount + 1);
-  };
-
   return (
-    <div className="text-center my-8">
-      <p className="text-2xl">
-        <span id="views">{viewCount}</span>
+    <div className="text-center my-2 mx-2">
+      <p className="">
+        Website Views: <span id="views">{viewCount}</span>
       </p>
     </div>
   );
