@@ -55,7 +55,7 @@ const NewUpdate = () => {
         <ul className="mt-10 gap-4 z-50">
           <li className="mt-10 z-20 flex items-center gap-2 mx-auto">
             <MdAlternateEmail />
-            can@canguden.com
+            canguden@gmail.com
           </li>
           <li className="mt-2 mb-10 z-20 flex items-center gap-2 mx-auto ">
             <BsFillTelephoneFill />
