@@ -9,12 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-three/drei": "^9.96.5",
+    "@react-three/fiber": "^8.15.15",
     "@vercel/analytics": "^0.1.8",
     "framer-motion": "^7.6.19",
+    "maath": "^0.10.7",
     "next": "13.0.6",
     "next-themes": "^0.2.1",
+    "random": "^4.1.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.7.1"
+    "react-icons": "^4.7.1",
+    "three": "^0.160.1"
   },
   "devDependencies": {
     "@types/node": "18.16.0",
