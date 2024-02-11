@@ -1,12 +1,9 @@
 import Head from "next/head";
-import Hero from "../components/Hero";
 import { motion } from "framer-motion";
 import Layout from "../components/Layout";
-import Geo from "../components/Geo";
-import Design from "../components/Design";
-import NewUpdate from "../components/NewUpdate";
+import Home from "../components/Home";
 
-const Home = () => {
+const Index = () => {
   const easing = [0.6, -0.05, 0, 0.1, 0.9];
   const fadeinUp = {
     initial: {
@@ -25,10 +22,10 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Can Güden</title>
+        <title>CG</title>
         <meta
           name="description"
-          content="Can Guden, Amsterdam, The Netherlands"
+          content="Can Guden"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -39,10 +36,10 @@ const Home = () => {
           variants="fadeinUp"
           exit={{ opacity: 0 }}
         ></motion.div>
-        <NewUpdate />
+        <Home />
       </Layout>
     </>
   );
 };
 
-export default Home;
+export default Index;

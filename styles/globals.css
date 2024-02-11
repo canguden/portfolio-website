@@ -6,7 +6,7 @@
 
 @layer base {
   body {
-    @apply text-black duration-300 bg-black dark:text-gray-300 mx-auto;
+    @apply duration-300 bg-black text-white mx-auto;
   }
 }
 
